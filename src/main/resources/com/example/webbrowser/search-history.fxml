@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      xmlns="http://javafx.com/javafx"
+      fx:controller="com.example.webbrowser.Controller.SearchHistoryController"
+      prefHeight="300.0" prefWidth="400.0">
+
+    <JFXButton text="Refresh" onAction="#refreshHistoryListView"/>
+
+    <JFXListView fx:id="historyListView" prefHeight="300.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+        <!-- Dữ liệu lịch sử sẽ được thêm vào đây -->
+    </JFXListView>
+</VBox>

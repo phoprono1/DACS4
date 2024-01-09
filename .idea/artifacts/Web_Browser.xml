@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Web-Browser">
+    <output-path>$PROJECT_DIR$/out/artifacts/Web_Browser</output-path>
+    <properties id="ant-preprocessing">
+      <options enabled="true" />
+    </properties>
+    <root id="root">
+      <element id="archive" name="Web_Browser.jar">
+        <element id="module-output" name="Web-Browser" />
+      </element>
+    </root>
+  </artifact>
+</component>

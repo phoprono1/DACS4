@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox prefHeight="0" prefWidth="0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.webbrowser.Controller.ChatterbotController">
+
+    <Label alignment="BASELINE_CENTER" prefWidth="Infinity" style="-fx-background-color: Lightblue; -fx-font-size: 20px; -fx-font-style: Italic" text="Chat Bot" textOverrun="CENTER_ELLIPSIS" />
+
+    <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" prefHeight="700.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+        <TextFlow fx:id="chatArea" />
+    </ScrollPane>
+
+    <HBox>
+        <JFXTextField fx:id="messageTextField" onAction="#sendMessage" promptText="Type your message here" HBox.hgrow="ALWAYS" />
+        <JFXButton onAction="#sendMessage" text="">
+         <graphic>
+            <SVGPath content="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+         </graphic></JFXButton>
+    </HBox>
+
+</VBox>

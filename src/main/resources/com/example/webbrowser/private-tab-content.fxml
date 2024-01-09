@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
+
+<VBox prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.webbrowser.Controller.PrivateWebBrowserController">
+    <HBox spacing="10">
+        <JFXButton onAction="#backButtonClicked" style="-fx-text-fill: white" text="&lt;" />
+        <JFXButton onAction="#forwardButtonClicked" style="-fx-text-fill: white" text="&gt;" />
+        <JFXButton onAction="#reloadPage" text="">
+            <graphic>
+                <SVGPath content="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z&#10;M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466" fill="WHITE" fillRule="EVEN_ODD" />
+            </graphic>
+            </JFXButton>
+        <JFXTextField fx:id="urlTextField" promptText="Enter URL or search term" style="-fx-prompt-text-fill: white" HBox.hgrow="ALWAYS" />
+        <JFXButton onAction="#searchButtonClicked" text="">
+            <graphic>
+                <SVGPath content="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" fill="WHITE" />
+            </graphic>
+        </JFXButton>
+    </HBox>
+    <WebView fx:id="webView" VBox.vgrow="ALWAYS" />
+
+    <stylesheets>
+        <URL value="@style/private-styles.css" />
+    </stylesheets>
+</VBox>

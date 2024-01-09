@@ -1,0 +1,37 @@
+/* styles.css */
+
+/* Chủ đề chung */
+.root {
+    -fx-background-color: #666; /* Màu nền chung */
+}
+
+/* Quy tắc chung cho tất cả các tab */
+.tab-pane .tab {
+    -fx-background-color: #666;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-pref-width: 80;
+    -fx-pref-height: 30;
+}
+
+/* Quy tắc riêng cho Tab "+" */
+.tab-pane .tab .add-tab {
+    -fx-background-color: #666;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Áp dụng kích thước riêng cho Tab "+" */
+.tab-pane .tab .add-tab:selected {
+    -fx-pref-width: 20;
+    -fx-pref-height: 30;
+}
+
+.tab-pane .current-tab:hover {
+    -fx-background-color: #888888;
+}
+
+.text-field .text {
+    -fx-text-fill: white;
+}
+

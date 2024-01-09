@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@style/styles.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.webbrowser.Controller.TabsController">
+    <Tab fx:id="tab" styleClass="current-tab" text="New Tab" >
+        <fx:include source="tab-content.fxml"/>
+    </Tab>
+    <Tab closable="false" styleClass="add-tab" text="+">
+        <!-- Placeholder for the add tab button -->
+    </Tab>
+</TabPane>

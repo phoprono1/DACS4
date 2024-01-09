@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.webbrowser.Controller.BookmarkController">
+    <HBox spacing="200">
+        <Label text="Settings for Bookmark" />
+        <JFXButton fx:id="refreshBookmark" onAction="#refreshBookmark" text="Refresh">
+         <graphic>
+             <SVGPath content="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z&#10;M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466" fillRule="EVEN_ODD" />
+         </graphic></JFXButton>
+    </HBox>
+
+    <ListView fx:id="bookmarkListView" onMouseClicked="#handleBookmarkClick" prefHeight="300" prefWidth="400" />
+</VBox>

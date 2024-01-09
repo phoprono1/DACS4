@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      fx:controller="com.example.webbrowser.Controller.SettingContentController" fx:id="contentVBox">
+    <Label fx:id="contentLabel" text="Select a feature from the list on the left."/>
+
+    <!-- Bao gồm các FXML khác -->
+    <fx:include source="bookmark.fxml" fx:id="bookmarkPane" visible="false" VBox.vgrow="ALWAYS"/>
+    <fx:include source="privacy-security.fxml" fx:id="privacySecurityPane" visible="false" VBox.vgrow="ALWAYS"/>
+</VBox>

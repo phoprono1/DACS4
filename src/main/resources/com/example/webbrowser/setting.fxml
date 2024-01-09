@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.VBox?>
+<SplitPane xmlns:fx="http://javafx.com/fxml/1" dividerPositions="0.3" xmlns="http://javafx.com/javafx/17.0.2-ea"
+           fx:controller="com.example.webbrowser.Controller.SettingController">
+    <!-- Danh sách tính năng -->
+    <VBox>
+        <JFXListView fx:id="featureList" onMouseClicked="#onFeatureSelected"/>
+    </VBox>
+
+    <!-- Nội dung chi tiết -->
+    <VBox fx:id="contentVBox">
+        <fx:include source="setting-content.fxml"/>
+    </VBox>
+</SplitPane>
